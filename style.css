@@ -1,0 +1,113 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #111111;
+    color: white;
+}
+
+header {
+    height: 65px;
+    display: flex;
+    background-color: rgba(68, 68, 68, 0.103);
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+}
+
+header p {
+    transition: 0.5s;
+}
+
+header a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header p:hover {
+    transform: scale(1.3);
+}
+
+#logoHeader {
+    width: 35px;
+}
+
+#links {
+    display: flex;
+    gap: 75px;
+}
+
+#languages {
+    padding: 5px;
+    background-color: #111111;
+    color: white;
+    border: 1px solid white;
+    font-size: 17px;
+    border-radius: 10px;
+    width: 7%;
+    text-align: center;
+    cursor: pointer;
+}
+
+main {
+    height: calc(100% - 65px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#interact {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    align-items: center;
+    gap: 20px;
+}
+
+#texts {
+    gap: 5px;
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+}
+
+#aButtonWhatsapp {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+}
+
+#whatsappButton {
+    width: 25%;
+    background-color: #111111;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 17px;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+#whatsappButton:hover {
+    transform: scale(1.1);
+    background-color: #0BC042;
+}
+
+#mainImage {
+    width: 50%;
+    transform: scale(0.7);
+    justify-content: center;
+}
