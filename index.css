@@ -1,0 +1,179 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+
+    scrollbar-color: #111 transparent;
+    scrollbar-width: thin;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+
+    background: #f2f2f2;
+    border-bottom: 1px solid #ddd;
+}
+
+header > h1 {
+    color: #111;
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 20px;
+    font-size: 24px;
+}
+
+header li > a {
+    color: black;
+    text-decoration: none;
+}
+
+header li > a:hover {
+    text-decoration: underline
+}
+
+section {
+    min-height: calc(100vh - 80px);
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    scroll-margin-top: 80px;
+}
+
+#inicio {
+    padding-top: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#inicioLeft {
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: left;
+}
+
+#inicioLeft h1 {
+    font-size: 42px;
+    color: #111;
+}
+
+#inicioLeft p {
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+#sobre {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#sobreLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    text-align: center;
+}
+
+#sobreLeft > p {
+    font-size: 22px;
+    line-height: 1.5;
+    max-width: 480px;
+    text-align: center;
+}
+
+#contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+#contato > h1 {
+    color: #111;
+}
+
+#contato a {
+    display: inline-block;
+}
+
+#textDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+#mainContatoText {
+    max-width: 450px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #444;
+}
+
+#secondaryText {
+    font-weight: bolder;
+}
+
+#buttonDiv {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+
+
+#whatsappButton {
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#belowButton {
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+hr {
+    max-width: 80%;
+    margin: 80px auto;
+}
+
+.blobShape {
+    width: 420px;
+    height: auto;
+}
+
